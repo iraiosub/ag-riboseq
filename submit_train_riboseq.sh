@@ -23,11 +23,11 @@ nvidia-smi
 python -c "import torch, sys; print('python:', sys.executable); print('torch:', torch.__version__); print('cuda available:', torch.cuda.is_available()); print('torch cuda:', torch.version.cuda); x = torch.ones(1, device='cuda'); print('cuda tensor ok:', x.item()); print('gpu name:', torch.cuda.get_device_name(0))"
 
 python train_riboseq.py \
-    --checkpoint alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial.pth \
-    --trunk-checkpoint models/model_fold_0.safetensors \
+    --checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial.pth \
+    --trunk-checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/modelsmodel_fold_0.safetensors \
     --alphagenome-model-version fold_0 \
-    --train-bed regions/ag_fold0/train.bed \
-    --valid-bed regions/ag_fold0/valid.bed \
+    --train-bed /nemo/project/proj-ai-dna-hackathon/proj5/regions/ag_fold0/train.bed \
+    --valid-bed /nemo/project/proj-ai-dna-hackathon/proj5/regions/ag_fold0/valid.bed \
     --epochs 50 \
     --head-architecture linear \
     --loss-mode poisson_multinomial \
