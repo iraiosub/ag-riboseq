@@ -73,7 +73,7 @@ evaluation, or visualization.
 
 ### `models/`
 
-AlphaGenome Ribo-seq model weights saved in `safetensors` format.
+AlphaGenome model weights saved in `safetensors` format.
 
 - `model_fold_0.safetensors` contains the checkpoint for the model trained for
   fold 0, corresponding to the fold split in `regions/ag_fold0/`.
