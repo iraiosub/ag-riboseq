@@ -1,0 +1,84 @@
+Running on host: ga120
+CUDA_VISIBLE_DEVICES=0
+Tue Jul  7 10:53:57 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   34C    P0             66W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+python: /nemo/lab/ulej/home/users/luscomben/users/iosubi/bin/miniconda3/envs/alphagenome_ribo312/bin/python
+torch: 2.5.1
+cuda available: True
+torch cuda: 12.1
+cuda tensor ok: 1.0
+gpu name: NVIDIA A100-SXM4-80GB
+Starting Ribo-seq training at Tue  7 Jul 10:54:21 BST 2026
+Using device: cuda
+Loading AlphaGenome trunk...
+Training windows: 100 from /nemo/project/proj-ai-dna-hackathon/proj5/small_regions/train_regions.bed
+Validation windows: 30 from /nemo/project/proj-ai-dna-hackathon/proj5/small_regions/valid_regions.bed
+AlphaGenome trunk checkpoint: /nemo/project/proj-ai-dna-hackathon/proj5/models/model_fold_0.safetensors
+AlphaGenome model version: fold_0
+Ribo-seq head modality: rna_seq
+Learning rate: 0.001
+Head architecture: linear
+Loss mode: poisson_multinomial
+Poisson-multinomial loss: segment_bp=2048, positional_weight=5.0, count_weight=1.0
+Poisson-multinomial predictions are interpreted as rates, not log-rates.
+Starting training...
+Epoch 1 Train Loss: 0.065505 PredMean: 0.028064 TargetMean: 0.001119
+Epoch 1 Valid Loss: 0.032803 PredMean: 0.001938 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 2 Train Loss: 0.036074 PredMean: 0.002238 TargetMean: 0.001119
+Epoch 2 Valid Loss: 0.031635 PredMean: 0.001190 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 3 Train Loss: 0.035079 PredMean: 0.001903 TargetMean: 0.001119
+Epoch 3 Valid Loss: 0.030995 PredMean: 0.000863 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 4 Train Loss: 0.034530 PredMean: 0.001635 TargetMean: 0.001119
+Epoch 4 Valid Loss: 0.030872 PredMean: 0.000658 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 5 Train Loss: 0.034157 PredMean: 0.001533 TargetMean: 0.001119
+Epoch 5 Valid Loss: 0.030320 PredMean: 0.000629 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 6 Train Loss: 0.033890 PredMean: 0.001476 TargetMean: 0.001119
+Epoch 6 Valid Loss: 0.030268 PredMean: 0.000566 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 7 Train Loss: 0.033674 PredMean: 0.001303 TargetMean: 0.001119
+Epoch 7 Valid Loss: 0.029914 PredMean: 0.000608 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 8 Train Loss: 0.033499 PredMean: 0.001384 TargetMean: 0.001119
+Epoch 8 Valid Loss: 0.029818 PredMean: 0.000523 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 9 Train Loss: 0.033338 PredMean: 0.001256 TargetMean: 0.001119
+Epoch 9 Valid Loss: 0.029659 PredMean: 0.000499 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 10 Train Loss: 0.033206 PredMean: 0.001251 TargetMean: 0.001119
+Epoch 10 Valid Loss: 0.029611 PredMean: 0.000453 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 11 Train Loss: 0.033099 PredMean: 0.001173 TargetMean: 0.001119
+Epoch 11 Valid Loss: 0.029347 PredMean: 0.000555 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 12 Train Loss: 0.032994 PredMean: 0.001241 TargetMean: 0.001119
+Epoch 12 Valid Loss: 0.029434 PredMean: 0.000483 TargetMean: 0.000937
+No improvement for 1/4 epochs
+Epoch 13 Train Loss: 0.032922 PredMean: 0.001199 TargetMean: 0.001119
+Epoch 13 Valid Loss: 0.029292 PredMean: 0.000493 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth
+Epoch 14 Train Loss: 0.032837 PredMean: 0.001153 TargetMean: 0.001119
+Epoch 14 Valid Loss: 0.029406 PredMean: 0.000385 TargetMean: 0.000937
+No improvement for 1/4 epochs
