@@ -88,3 +88,17 @@ Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphageno
 Epoch 16 Train Loss: 0.032654 PredMean: 0.001164 TargetMean: 0.001119
 Epoch 16 Valid Loss: 0.029086 PredMean: 0.000432 TargetMean: 0.000937
 Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
+Epoch 17 Train Loss: 0.032567 PredMean: 0.001098 TargetMean: 0.001119
+Epoch 17 Valid Loss: 0.029076 PredMean: 0.000397 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
+Epoch 18 Train Loss: 0.032520 PredMean: 0.001095 TargetMean: 0.001119
+Epoch 18 Valid Loss: 0.028971 PredMean: 0.000444 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
+Epoch 19 Train Loss: 0.032462 PredMean: 0.001130 TargetMean: 0.001119
+Epoch 19 Valid Loss: 0.028951 PredMean: 0.000415 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
+Epoch 20 Train Loss: 0.032408 PredMean: 0.001112 TargetMean: 0.001119
+Epoch 20 Valid Loss: 0.028993 PredMean: 0.000395 TargetMean: 0.000937
+No improvement for 1/4 epochs
+Training complete. Best weights saved to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth from epoch 19 with validation loss 0.028951.
+Finished RNAseq-seq training at Tue  7 Jul 12:04:40 BST 2026

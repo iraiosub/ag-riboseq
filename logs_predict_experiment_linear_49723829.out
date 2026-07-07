@@ -1,0 +1,44 @@
+Running on host: ga112
+CUDA_VISIBLE_DEVICES=0
+Tue Jul  7 11:52:32 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   28C    P0             61W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+python: /nemo/lab/ulej/home/users/luscomben/users/iosubi/bin/miniconda3/envs/alphagenome_ribo312/bin/python
+torch: 2.5.1
+cuda available: True
+torch cuda: 12.1
+cuda tensor ok: 1.0
+gpu name: NVIDIA A100-SXM4-80GB
+Using device: cuda
+Ribo-seq head modality: rna_seq
+Raw plus prediction stats: min=6.48569e-09 mean=0.00016251 max=0.276914 nonzero=1048576/1048576
+Raw minus prediction stats: min=3.43882e-08 mean=0.000582665 max=1.10708 nonzero=1048576/1048576
+Export plus value stats: min=6.48569e-09 mean=0.00016251 max=0.276914 nonzero=1048576/1048576
+Export minus value stats: min=3.43882e-08 mean=0.000582665 max=1.10708 nonzero=1048576/1048576
+Wrote riboseq_pred_ag_fold0_linear_poisson_multinomial-test_small.plus.bigwig
+Wrote riboseq_pred_ag_fold0_linear_poisson_multinomial-test_small.minus.bigwig
+Using device: cuda
+Ribo-seq head modality: rna_seq
+Raw plus prediction stats: min=3.34003e-09 mean=0.000194233 max=0.364122 nonzero=1048576/1048576
+Raw minus prediction stats: min=1.92338e-08 mean=0.000435326 max=0.767237 nonzero=1048576/1048576
+Export plus value stats: min=3.34003e-09 mean=0.000194233 max=0.364122 nonzero=1048576/1048576
+Export minus value stats: min=1.92338e-08 mean=0.000435326 max=0.767237 nonzero=1048576/1048576
+Wrote rnaseq_pred_ag_fold0_linear_poisson_multinomial-test_small.plus.bigwig
+Wrote rnaseq_pred_ag_fold0_linear_poisson_multinomial-test_small.minus.bigwig
