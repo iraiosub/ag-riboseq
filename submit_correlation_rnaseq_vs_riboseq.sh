@@ -2,8 +2,7 @@
 #SBATCH --job-name=rnaseq_ribo_corr
 #SBATCH --output=logs_correlation_%j.out
 #SBATCH --error=logs_correlation_%j.err
-#SBATCH --partition=ga100
-#SBATCH --gres=gpu:1
+#SBATCH --partition=ncpu
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
 #SBATCH --time=01:00:00
