@@ -22,10 +22,6 @@ echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-unset}"
 nvidia-smi
 python -c "import torch, sys; print('python:', sys.executable); print('torch:', torch.__version__); print('cuda available:', torch.cuda.is_available()); print('torch cuda:', torch.version.cuda); x = torch.ones(1, device='cuda'); print('cuda tensor ok:', x.item()); print('gpu name:', torch.cuda.get_device_name(0))"
 
-if [ ! -s sequences_human.bed.gz ]; then
-    echo "Missing sequences_human.bed.gz. Run 'bash download_weights.sh' from the repo root before submitting."
-    exit 1
-fi
 python predict_riboseq_to_bigwig.py \
     --checkpoint ../alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_49721442.pth \
     --regions-bed ../small_regions/test_small.bed \

@@ -86,3 +86,5 @@ Epoch 15 Train Loss: 0.032698 PredMean: 0.001150 TargetMean: 0.001119
 Epoch 15 Valid Loss: 0.029100 PredMean: 0.000467 TargetMean: 0.000937
 Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
 Epoch 16 Train Loss: 0.032654 PredMean: 0.001164 TargetMean: 0.001119
+Epoch 16 Valid Loss: 0.029086 PredMean: 0.000432 TargetMean: 0.000937
+Saved new best checkpoint to /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_rnaseq_head_ag_fold0_linear_poisson_multinomial_49721436.pth
