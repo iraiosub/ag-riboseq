@@ -1,0 +1,29 @@
+Running on host: ga110
+CUDA_VISIBLE_DEVICES=0
+Tue Jul  7 11:45:02 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   27C    P0             60W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+python: /nemo/lab/ulej/home/users/luscomben/users/iosubi/bin/miniconda3/envs/alphagenome_ribo312/bin/python
+torch: 2.5.1
+cuda available: True
+torch cuda: 12.1
+cuda tensor ok: 1.0
+gpu name: NVIDIA A100-SXM4-80GB
+Missing sequences_human.bed.gz. Run 'bash download_weights.sh' from the repo root before submitting.
