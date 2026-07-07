@@ -26,7 +26,7 @@ python -c "import torch, sys; print('python:', sys.executable); print('torch:', 
 echo "Starting Ribo-seq training at $(date)"
 
 python -u train_riboseq.py \
-    --checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial.pth \
+    --checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_${SLURM_JOB_ID}.pth \
     --trunk-checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/models/model_fold_0.safetensors \
     --alphagenome-model-version fold_0 \
     --train-bed /nemo/project/proj-ai-dna-hackathon/proj5/regions/ag_fold0/train.bed \
