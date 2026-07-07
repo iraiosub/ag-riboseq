@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=alpha_ribo_exp_linear
-#SBATCH --output=logs_experiment_linear_%j.out
-#SBATCH --error=logs_experiment_linear_%j.err
+#SBATCH --output=logs_riboseq_experiment_linear_%j.out
+#SBATCH --error=logs_riboseq_experiment_linear_%j.err
 #SBATCH --partition=ga100
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
@@ -29,14 +29,15 @@ python -u train_riboseq.py \
     --checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/alphagenome_riboseq_head_ag_fold0_linear_poisson_multinomial_${SLURM_JOB_ID}.pth \
     --trunk-checkpoint /nemo/project/proj-ai-dna-hackathon/proj5/models/model_fold_0.safetensors \
     --alphagenome-model-version fold_0 \
-    --train-bed /nemo/project/proj-ai-dna-hackathon/proj5/regions/ag_fold0/train.bed \
-    --valid-bed /nemo/project/proj-ai-dna-hackathon/proj5/regions/ag_fold0/valid.bed \
-    --epochs 50 \
+    --train-bed /nemo/project/proj-ai-dna-hackathon/proj5/small_regions/train_regions.bed \
+    --valid-bed /nemo/project/proj-ai-dna-hackathon/proj5/small_regions/valid_regions.bed \
+    --epochs 20 \
     --head-architecture linear \
     --loss-mode poisson_multinomial \
     --multinomial-segment-bp 2048 \
     --positional-weight 5.0 \
     --count-weight 1.0 \
-    --min-delta 1e-5
+    --min-delta 1e-5 \
+    --early-stopping-patience 4
 
 echo "Finished Ribo-seq training at $(date)"

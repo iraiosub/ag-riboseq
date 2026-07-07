@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=alpha_ribo_exp_linear
-#SBATCH --output=logs_experiment_linear_%j.out
-#SBATCH --error=logs_experiment_linear_%j.err
+#SBATCH --output=logs_rnaseq_experiment_linear_%j.out
+#SBATCH --error=logs_rnaseq_experiment_linear_%j.err
 #SBATCH --partition=ga100
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=4
